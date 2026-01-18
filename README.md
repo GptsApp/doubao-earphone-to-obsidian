@@ -1,6 +1,6 @@
-# Doubao Voice Notes
+# Doubao Earphone To Obsidian
 
-用豆包语音助手，把灵感直接说进 Obsidian。
+用豆包耳机助手，把灵感直接说进 Obsidian。
 
 > "豆包豆包，记笔记，明天要买咖啡"
 >
@@ -19,8 +19,8 @@
 
 ```bash
 # 克隆项目
-git clone https://github.com/你的用户名/doubao-voice-notes.git
-cd doubao-voice-notes
+git clone https://github.com/你的用户名/doubao-earphone-to-obsidian.git
+cd doubao-earphone-to-obsidian
 
 # 创建虚拟环境
 python3 -m venv .venv
@@ -33,21 +33,102 @@ pip install -r requirements.txt
 playwright install chromium
 ```
 
-### 2. 配置
+### 2. 启动并配置（自动引导）
 
 ```bash
-# 复制配置模板
-cp .env.example .env
-
-# 编辑配置文件
-nano .env  # 或用你喜欢的编辑器
+# 直接运行程序
+python main.py
 ```
 
-必须配置的项目：
-- `OBSIDIAN_VAULT`: 你的 Obsidian 仓库路径
-- `CHAT_URL`: 豆包聊天页面 URL（登录后从浏览器复制）
+**首次运行时，程序会自动引导你设置 Obsidian 仓库路径：**
 
-### 3. 首次运行（登录）
+```
+==================================================
+  豆包耳机助手 - Obsidian 同步工具
+==================================================
+
+使用方法：
+  1. 说「豆包豆包，记笔记，<内容>」记录笔记
+  2. 说「豆包豆包，记任务，<内容>」记录任务
+
+查看结果：
+  笔记保存位置: {OBSIDIAN_VAULT}/{NOTES_DIR}
+  任务保存位置: {OBSIDIAN_VAULT}/{TASKS_DIR}
+
+--------------------------------------------------
+如果这个工具对你有帮助，欢迎关注开发者：
+  @WeWill_Rocky  https://x.com/WeWill_Rocky
+--------------------------------------------------
+
+==================================================
+  ⚠️  Obsidian 仓库路径未设置或不存在
+==================================================
+
+请选择设置方式：
+  1. 输入 Obsidian 仓库的绝对路径
+  2. 查找常见的 Obsidian 仓库位置
+  3. 退出程序
+
+请输入选项 (1/2/3):
+```
+
+#### 选项 1：手动输入路径
+
+输入你的 Obsidian 仓库的完整路径，例如：
+
+**macOS:**
+```
+/Users/zhoupeiyi/Documents/Obsidian/MyVault
+```
+
+**Windows:**
+```
+C:\Users\zhoupeiyi\Documents\Obsidian\MyVault
+```
+
+#### 选项 2：自动查找
+
+程序会在常见位置搜索 Obsidian 仓库：
+
+- `~/Documents/Obsidian/`
+- `~/Dropbox/Obsidian/`
+- `~/OneDrive/Obsidian/`
+- `~/Library/Mobile Documents/iCloud~obsidian/`
+
+找到后会自动显示所有可用的仓库。
+
+#### 如何找到你的 Obsidian 仓库路径？
+
+1. **在 Obsidian App 中查看**：
+   - 打开 Obsidian
+   - 点击左侧边栏的仓库图标
+   - 选择 "关于"
+   - 查看 "当前仓库" 路径
+
+2. **在文件系统中查找**：
+   - Obsidian 仓库的根目录下有一个 `.obsidian` 文件夹
+   - 这是 Obsidian 仓库的标识
+
+3. **常见位置**：
+   - macOS: `~/Documents/Obsidian/仓库名/`
+   - Windows: `C:\Users\用户名\Documents\Obsidian\仓库名\`
+   - Linux: `~/Documents/Obsidian/仓库名/`
+
+### 3. 配置豆包聊天 URL（可选）
+
+编辑 `.env` 文件：
+
+```bash
+nano .env
+```
+
+修改 `CHAT_URL` 为你的豆包聊天页面 URL（登录后从浏览器地址栏复制）：
+
+```bash
+CHAT_URL=https://www.doubao.com/chat/624642496948226
+```
+
+### 4. 首次运行（登录）
 
 ```bash
 python main.py
@@ -55,7 +136,7 @@ python main.py
 
 首次运行会打开浏览器，请登录你的豆包账号。登录成功后浏览器会自动关闭。
 
-### 4. 启动服务
+### 5. 启动服务
 
 ```bash
 python main.py
@@ -111,10 +192,10 @@ python main.py
 
 ```bash
 # Linux/macOS
-nohup python main.py > doubao.log 2>&1 &
+nohup python main.py > doubao-earphone-to-obsidian.log 2>&1 &
 
 # 或使用 screen/tmux
-screen -S doubao
+screen -S doubao-earphone-to-obsidian
 python main.py
 # Ctrl+A, D 分离
 ```
