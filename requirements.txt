@@ -1,0 +1,4 @@
+# AIOLA 依赖 (终端版)
+playwright>=1.40.0
+python-dotenv>=1.0.0
+aiofiles>=23.0.0

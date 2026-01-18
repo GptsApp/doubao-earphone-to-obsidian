@@ -1,0 +1,44 @@
+# 环境配置（包含敏感信息）
+.env
+
+# 登录状态（包含 cookie，绝对不能提交）
+storage_state.json
+
+# 数据库
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+.eggs/
+*.egg-info/
+*.egg
+
+# Playwright 浏览器（太大，用户自行下载）
+pw-browsers/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Claude Code
+.claude/
+
+# 日志
+*.log
+logs/
