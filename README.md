@@ -1,4 +1,4 @@
-# 🎙️ Doubao Voice Notes - 豆包语音笔记助手
+# 🎙️ Doubao Earphone to Obsidian - 豆包耳机语音笔记桥
 
 [![GitHub stars](https://img.shields.io/github/stars/GptsApp/doubao-earphone-to-obsidian?style=social)](https://github.com/GptsApp/doubao-earphone-to-obsidian)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -236,9 +236,9 @@ python main.py
 
 <div align="center">
 
-**让豆包耳机成为你的语音第二大脑** 🧠
+**让豆包耳机成为你连接Obsidian的语音桥梁** 🧠
 
-*专为 Ola friend 耳机用户打造的智能笔记解决方案*
+*专为 Ola friend 耳机用户打造的语音转文字解决方案*
 
 Made with ❤️ by [WeWill_Rocky](https://x.com/WeWill_Rocky)
 
