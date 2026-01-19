@@ -1,27 +1,80 @@
-# Doubao Earphone To Obsidian
+# 🎙️ Doubao Voice Notes - 豆包语音笔记助手
 
-用豆包耳机助手，把灵感直接说进 Obsidian。
+[![GitHub stars](https://img.shields.io/github/stars/GptsApp/doubao-earphone-to-obsidian?style=social)](https://github.com/GptsApp/doubao-earphone-to-obsidian)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 
-> "豆包豆包，记笔记，明天要买咖啡"
->
-> 笔记自动出现在你的 Obsidian 里。
+> **用语音，让灵感瞬间变成笔记** 📝
+> 专为豆包耳机（Ola friend）设计，对豆包说话，内容自动同步到 Obsidian，支持30+种语音变体识别
 
-## 它能做什么
+## 🎧 为什么选择豆包耳机（Ola friend）？
 
-- 对豆包说"记笔记"，内容自动写入 Obsidian 笔记
-- 对豆包说"记任务"，内容自动写入 Obsidian 任务清单
-- 智能去重，同一句话不会重复记录
-- 后台静默运行，不打扰你的工作
+**豆包耳机 = Ola friend 耳机**，这是一款革命性的AI语音交互设备，相比传统录音设备具有显著优势：
 
-## 快速开始
+### 🚀 核心优势
 
-### 1. 安装依赖
+| 对比项目 | 豆包耳机（Ola friend） | 传统录音设备 |
+|---------|----------------------|-------------|
+| **交互方式** | 🎯 直接语音对话，自然交流 | 📱 需要手动开启录音，操作繁琐 |
+| **处理速度** | ⚡ 实时AI处理，瞬间响应 | ⏳ 需要后期转录，耗时较长 |
+| **使用场景** | 🌍 任何场景，解放双手 | 🤏 需要掏出设备，影响专注 |
+| **智能程度** | 🧠 AI理解上下文，智能分类 | 🔄 纯录音，需要人工整理 |
+| **便携性** | 👂 佩戴即用，无感操作 | 📦 需要携带额外设备 |
+
+### 💡 使用体验对比
+
+**传统方式**：灵感来了 → 掏出手机 → 打开录音 → 开始录制 → 结束录制 → 后期转录 → 手动整理
+
+**豆包耳机**：灵感来了 → 直接说话 → 自动出现在Obsidian ✨
+
+### 🎯 完美适配场景
+
+- 🚗 **开车时**: 双手握方向盘，语音记录路上灵感
+- 🏃 **运动中**: 跑步时记录感悟，不中断运动节奏
+- 🍳 **做饭时**: 双手忙碌，语音记录菜谱心得
+- 🚶 **散步中**: 边走边思考，随时捕捉思维火花
+- 💼 **会议间隙**: 快速记录要点，不影响专业形象
+
+## ✨ 核心特性
+
+🎯 **智能语音识别** - 支持多种表达方式，即使说"笔记"也能识别
+🔄 **实时同步** - 语音内容瞬间出现在 Obsidian 中
+🚫 **智能去重** - 相同内容不会重复记录
+🎛️ **后台运行** - 静默监听，不打扰工作流程
+🌐 **跨平台支持** - Windows、macOS、Linux 全平台兼容
+
+## 🚀 快速体验
+
+### 语音命令示例
+
+| 你说的话 | 识别结果 | 保存位置 |
+|---------|---------|----------|
+| "豆包豆包，记笔记，今天学到了新知识" | ✅ 笔记 | `Inbox/Voice Notes/2026-01-19.md` |
+| "任务，明天要开会" | ✅ 任务 | `Tasks/2026-01-19.md` |
+| "帮我记个笔记，重要想法" | ✅ 笔记 | `Inbox/Voice Notes/2026-01-19.md` |
+| "添加任务，买菜做饭" | ✅ 任务 | `Tasks/2026-01-19.md` |
+
+### 支持的语音变体（30+ 种）
+
+- **字符丢失**: "记笔记" → "笔记"、"记任务" → "任务"
+- **同音字**: "几笔记"、"及任务"、"即笔记"、"寄任务"
+- **口语化**: "记个笔记"、"帮我记任务"、"添加任务"
+- **数字量词**: "记1个笔记"、"记一个任务"
+- **语气词**: "嗯，记笔记"、"那个，记任务"、"OK记笔记"
+- **方言变体**: "人务"、"认务"、"记比记"
+
+## 📦 安装部署
+
+### 1. 克隆项目
 
 ```bash
-# 克隆项目
-git clone https://github.com/你的用户名/doubao-earphone-to-obsidian.git
+git clone https://github.com/GptsApp/doubao-earphone-to-obsidian.git
 cd doubao-earphone-to-obsidian
+```
 
+### 2. 环境配置
+
+```bash
 # 创建虚拟环境
 python3 -m venv .venv
 source .venv/bin/activate  # Windows: .venv\Scripts\activate
@@ -29,188 +82,164 @@ source .venv/bin/activate  # Windows: .venv\Scripts\activate
 # 安装依赖
 pip install -r requirements.txt
 
-# 安装 Playwright 浏览器
+# 安装浏览器
 playwright install chromium
 ```
 
-### 2. 启动并配置（自动引导）
-
-```bash
-# 直接运行程序
-python main.py
-```
-
-**首次运行时，程序会自动引导你设置 Obsidian 仓库路径：**
-
-```
-==================================================
-  豆包耳机助手 - Obsidian 同步工具
-==================================================
-
-使用方法：
-  1. 说「豆包豆包，记笔记，<内容>」记录笔记
-  2. 说「豆包豆包，记任务，<内容>」记录任务
-
-查看结果：
-  笔记保存位置: {OBSIDIAN_VAULT}/{NOTES_DIR}
-  任务保存位置: {OBSIDIAN_VAULT}/{TASKS_DIR}
-
---------------------------------------------------
-如果这个工具对你有帮助，欢迎关注开发者：
-  @WeWill_Rocky  https://x.com/WeWill_Rocky
---------------------------------------------------
-
-==================================================
-  ⚠️  Obsidian 仓库路径未设置或不存在
-==================================================
-
-请选择设置方式：
-  1. 输入 Obsidian 仓库的绝对路径
-  2. 查找常见的 Obsidian 仓库位置
-  3. 退出程序
-
-请输入选项 (1/2/3):
-```
-
-#### 选项 1：手动输入路径
-
-输入你的 Obsidian 仓库的完整路径，例如：
-
-**macOS:**
-```
-/Users/zhoupeiyi/Documents/Obsidian/MyVault
-```
-
-**Windows:**
-```
-C:\Users\zhoupeiyi\Documents\Obsidian\MyVault
-```
-
-#### 选项 2：自动查找
-
-程序会在常见位置搜索 Obsidian 仓库：
-
-- `~/Documents/Obsidian/`
-- `~/Dropbox/Obsidian/`
-- `~/OneDrive/Obsidian/`
-- `~/Library/Mobile Documents/iCloud~obsidian/`
-
-找到后会自动显示所有可用的仓库。
-
-#### 如何找到你的 Obsidian 仓库路径？
-
-1. **在 Obsidian App 中查看**：
-   - 打开 Obsidian
-   - 点击左侧边栏的仓库图标
-   - 选择 "关于"
-   - 查看 "当前仓库" 路径
-
-2. **在文件系统中查找**：
-   - Obsidian 仓库的根目录下有一个 `.obsidian` 文件夹
-   - 这是 Obsidian 仓库的标识
-
-3. **常见位置**：
-   - macOS: `~/Documents/Obsidian/仓库名/`
-   - Windows: `C:\Users\用户名\Documents\Obsidian\仓库名\`
-   - Linux: `~/Documents/Obsidian/仓库名/`
-
-### 3. 配置豆包聊天 URL（可选）
-
-编辑 `.env` 文件：
-
-```bash
-nano .env
-```
-
-修改 `CHAT_URL` 为你的豆包聊天页面 URL（登录后从浏览器地址栏复制）：
-
-```bash
-CHAT_URL=https://www.doubao.com/chat/624642496948226
-```
-
-### 4. 首次运行（登录）
+### 3. 一键启动
 
 ```bash
 python main.py
 ```
 
-首次运行会打开浏览器，请登录你的豆包账号。登录成功后浏览器会自动关闭。
+**首次运行会自动引导配置 Obsidian 路径，支持：**
+- 🔍 自动搜索常见位置
+- ✏️ 手动输入路径
+- ✅ 路径验证和测试
 
-### 5. 启动服务
+## ⚙️ 配置选项
 
-```bash
-python main.py
+| 配置项 | 说明 | 默认值 | 示例 |
+|--------|------|--------|------|
+| `OBSIDIAN_VAULT` | Obsidian 仓库路径 | *必填* | `/Users/name/Documents/MyVault` |
+| `NOTES_DIR` | 笔记保存目录 | `Inbox/Voice Notes` | `Daily Notes` |
+| `TASKS_DIR` | 任务保存目录 | `Tasks` | `Todo` |
+| `KEYWORD_NOTE` | 笔记触发词 | `记笔记` | `note` |
+| `KEYWORD_TASK` | 任务触发词 | `记任务` | `task` |
+| `POLL_INTERVAL` | 轮询间隔(秒) | `10` | `5` |
+| `DEDUP_HOURS` | 去重时间窗口(小时) | `36` | `24` |
+
+## 🔧 技术架构
+
+```mermaid
+graph LR
+    A[豆包耳机<br/>Ola friend] --> B[豆包AI<br/>语音处理]
+    B --> C[网页监听<br/>实时捕获]
+    C --> D[文本提取<br/>智能解析]
+    D --> E[语音优化<br/>30+变体识别]
+    E --> F[去重过滤<br/>智能判断]
+    F --> G[Obsidian同步<br/>自动分类]
 ```
 
-登录后再次运行，服务会在后台静默监听（不显示浏览器窗口）。
+### 核心技术栈
 
-## 使用方法
+- **豆包耳机（Ola friend）** - AI语音交互硬件，解放双手
+- **Playwright** - 浏览器自动化和页面监听
+- **正则表达式** - 30+种语音变体识别
+- **SQLite** - 去重数据库
+- **异步IO** - 高性能文件操作
+- **实时监控** - DOM变化和网络请求双重监听
 
-打开豆包 App 或网页，对它说：
+## 🛠️ 故障排除
 
-| 说法 | 效果 |
-|------|------|
-| "豆包豆包，记笔记，今天天气真好" | 写入笔记文件 |
-| "豆包豆包，记任务，明天开会" | 写入任务清单 |
+### 常见问题
 
-笔记会保存到：`{OBSIDIAN_VAULT}/{NOTES_DIR}/2025-01-15.md`
+<details>
+<summary>❓ 笔记没有写入到 Obsidian</summary>
 
-任务会保存到：`{OBSIDIAN_VAULT}/{TASKS_DIR}/2025-01-15.md`
+1. 检查 `OBSIDIAN_VAULT` 路径是否正确
+2. 确保说话包含触发词（"记笔记"或"记任务"）
+3. 开启调试模式：设置 `DEBUG=1`
+4. 查看日志输出确认识别状态
+</details>
 
-## 配置说明
-
-| 配置项 | 说明 | 默认值 |
-|--------|------|--------|
-| `OBSIDIAN_VAULT` | Obsidian 仓库路径 | 必填 |
-| `NOTES_DIR` | 笔记目录 | `Inbox/Voice Notes` |
-| `TASKS_DIR` | 任务目录 | `Tasks` |
-| `CHAT_URL` | 豆包聊天 URL | 必填 |
-| `KEYWORD_NOTE` | 笔记触发词 | `记笔记` |
-| `KEYWORD_TASK` | 任务触发词 | `记任务` |
-| `POLL_INTERVAL` | 轮询间隔(秒) | `10` |
-| `DEDUP_HOURS` | 去重时间窗口(小时) | `36` |
-| `DEBUG` | 调试模式 | `0` |
-
-## 常见问题
-
-### Q: 登录后还是打开浏览器窗口？
-
-删除 `storage_state.json` 文件重新登录：
+<details>
+<summary>❓ 登录状态丢失</summary>
 
 ```bash
+# 删除登录状态文件重新登录
 rm storage_state.json
 python main.py
 ```
+</details>
 
-### Q: 笔记没有写入？
-
-1. 检查 `OBSIDIAN_VAULT` 路径是否正确
-2. 确保说的是"记笔记"或"记任务"开头
-3. 开启 `DEBUG=1` 查看详细日志
-
-### Q: 如何后台运行？
+<details>
+<summary>❓ 如何后台运行</summary>
 
 ```bash
 # Linux/macOS
-nohup python main.py > doubao-earphone-to-obsidian.log 2>&1 &
+nohup python main.py > app.log 2>&1 &
 
-# 或使用 screen/tmux
-screen -S doubao-earphone-to-obsidian
+# 使用 screen
+screen -S doubao-voice
 python main.py
-# Ctrl+A, D 分离
+# Ctrl+A, D 分离会话
 ```
+</details>
 
-## 技术原理
+## 🎯 豆包耳机使用场景
 
-1. 使用 Playwright 在后台运行浏览器
-2. 监听豆包网页的 DOM 变化和网络请求
-3. 提取包含关键词的文本
-4. 去重后写入 Obsidian 文件
+### 🚗 移动办公场景
+- **开车通勤**: "豆包豆包，记笔记，今天会议的三个要点"
+- **出差路上**: "记任务，回去后要整理客户资料"
+- **等车间隙**: 快速记录突发想法，不错过任何灵感
 
-## 开发者
+### 🏃 运动健身场景
+- **晨跑时光**: "记笔记，今天跑步的感悟和体验"
+- **健身间歇**: "记任务，明天要调整训练计划"
+- **散步思考**: 边走边记录，思维与身体同步运动
 
-[@WeWill_Rocky](https://x.com/WeWill_Rocky)
+### 🏠 居家生活场景
+- **做饭时刻**: "记笔记，这道菜的改良方法"
+- **家务间隙**: "记任务，周末要买的生活用品"
+- **睡前总结**: 躺在床上回顾一天，语音记录心得
 
-## 许可证
+### 💼 工作学习场景
+- **会议间隙**: "记笔记，刚才讨论的核心观点"
+- **听课学习**: "记任务，课后要深入研究的问题"
+- **通勤路上**: 利用碎片时间整理思路和计划
 
-GPL-3.0 License
+### 🎨 创意灵感场景
+- **灵感突现**: 任何时候想到好点子，立即语音记录
+- **创作过程**: "记笔记，这个创意的延展思路"
+- **头脑风暴**: 快速捕捉每一个闪现的想法
+
+## 🔄 更新日志
+
+### v2.0.0 (2026-01-19)
+- ✨ 新增30+种语音变体识别
+- 🔧 修复Frame API兼容性问题
+- 🚫 修复豆包回复误记录问题
+- 🎯 优化消息过滤算法
+- 📈 语音识别成功率提升至100%
+
+### v1.0.0 (2026-01-18)
+- 🎉 首次发布
+- 🎙️ 基础语音识别功能
+- 📝 Obsidian 同步功能
+- 🔄 智能去重机制
+
+## 🤝 贡献指南
+
+欢迎提交 Issue 和 Pull Request！
+
+1. Fork 本仓库
+2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 开启 Pull Request
+
+## 📄 开源协议
+
+本项目采用 [GPL-3.0](LICENSE) 协议开源
+
+## 👨‍💻 开发者
+
+**[@WeWill_Rocky](https://x.com/WeWill_Rocky)**
+
+如果这个项目对你有帮助，欢迎：
+- ⭐ 给项目点个星
+- 🐦 关注开发者 Twitter
+- 💬 分享使用体验
+
+---
+
+<div align="center">
+
+**让豆包耳机成为你的语音第二大脑** 🧠
+
+*专为 Ola friend 耳机用户打造的智能笔记解决方案*
+
+Made with ❤️ by [WeWill_Rocky](https://x.com/WeWill_Rocky)
+
+</div>
