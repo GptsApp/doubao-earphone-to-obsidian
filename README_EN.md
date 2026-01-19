@@ -11,25 +11,38 @@
 > **Turn your voice into notes instantly** 📝
 > Designed for Doubao AI earphones (Ola friend), speak naturally and watch your thoughts appear in Obsidian automatically
 
-## 🎧 Why Doubao AI Earphones?
+## 🤔 Have You Ever Faced These Problems?
 
-**Doubao Earphones = Ola friend earphones** - A revolutionary AI voice interaction device that outperforms traditional recording methods:
+- 💡 **Ideas strike but can't record**: Great thoughts during driving, exercising, or cooking, but hands are occupied
+- 📱 **Traditional recording is too cumbersome**: Pull out phone → Open app → Start recording → Post-processing, too many steps and easy to miss inspiration
+- 🔒 **Doubao earphones limited functionality**: Just an AI Q&A device, valuable conversations disappear after listening
 
-### 🚀 Core Advantages
+## 🔒 Doubao Earphones' Ecosystem Limitations
 
-| Feature | Doubao AI Earphones | Traditional Recording |
-|---------|---------------------|----------------------|
-| **Interaction** | 🎯 Natural voice conversation | 📱 Manual recording activation |
-| **Processing** | ⚡ Real-time AI processing | ⏳ Post-recording transcription |
-| **Usage** | 🌍 Hands-free anywhere | 🤏 Requires device handling |
-| **Intelligence** | 🧠 Context-aware AI categorization | 🔄 Raw audio, manual organization |
-| **Portability** | 👂 Wear and forget | 📦 Additional device to carry |
+**Originally Doubao earphones only support closed conversation features**:
+- ❌ **Just an AI Q&A device**
+- ❌ **Trapped in Doubao ecosystem** - All conversation content cannot be exported, limited to Doubao client system
+- ❌ **Knowledge silos** - Queried knowledge, learning content, important ideas disappear after listening
+
+## ✨ Doubao Earphone Assistant's Breakthrough
+
+**Now through our assistant, achieve two core breakthroughs**:
+
+### 🌉 Break Ecosystem Barriers
+Automatically sync essential content to Obsidian - no more valuable conversations trapped in closed systems
+
+### 🔗 Cross-platform Integration
+Doubao's AI capabilities + Obsidian's knowledge management - perfect combination of voice interaction and knowledge accumulation
+
+**From "listen and forget" to "accumulate into library"** - Make Doubao earphones truly your knowledge management assistant!
+
+## 🚀 One Command Solves Everything
 
 ### 💡 Experience Comparison
 
 **Traditional Way**: Idea strikes → Pull out phone → Open recorder → Start recording → Stop recording → Transcribe later → Manual organization
 
-**Doubao Way**: Idea strikes → Say "Doubao Doubao, take a note" → Automatically appears in Obsidian ✨
+**Doubao Earphone Assistant**: Idea strikes → Say "Doubao Doubao, take a note" → Automatically appears in Obsidian ✨
 
 ### 🎯 Perfect Use Cases
 
