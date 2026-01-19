@@ -1,6 +1,6 @@
-# 🎙️ Doubao Earphone to Obsidian
+# 🎙️ Doubao Earphone Assistant
 
-> **Real-time voice-to-text bridge for Doubao AI earphones and Obsidian**
+> **Real-time voice assistant for Doubao AI earphones and Obsidian**
 
 Transform your Doubao AI earphone conversations into organized Obsidian notes automatically. No manual transcription, no app switching - just speak naturally and watch your thoughts appear in your knowledge base.
 

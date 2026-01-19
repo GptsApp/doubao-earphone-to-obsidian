@@ -1,6 +1,6 @@
-# Contributing to Doubao Earphone to Obsidian
+# Contributing to Doubao Earphone Assistant
 
-Thank you for your interest in contributing to Doubao Earphone to Obsidian! This document provides guidelines for contributing to the project.
+Thank you for your interest in contributing to Doubao Earphone Assistant! This document provides guidelines for contributing to the project.
 
 ## 🚀 Quick Start for Contributors
 
@@ -124,7 +124,7 @@ python -m pytest tests/test_voice_recognition.py
 **Environment:**
 - OS: [e.g., macOS 13.0, Windows 11, Ubuntu 22.04]
 - Python version: [e.g., 3.9.7]
-- Doubao Earphone to Obsidian version: [e.g., v2.0.0]
+- Doubao Earphone Assistant version: [e.g., v2.0.0]
 
 **Steps to Reproduce:**
 1. Go to '...'
@@ -256,4 +256,4 @@ Contributors will be recognized in:
 - Release notes
 - Project documentation
 
-Thank you for contributing to Doubao Earphone to Obsidian! 🚀
+Thank you for contributing to Doubao Earphone Assistant! 🚀

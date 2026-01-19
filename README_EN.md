@@ -1,4 +1,8 @@
-# 🎙️ Doubao Earphone to Obsidian - AI Voice-to-Text Bridge
+# 🎙️ Doubao Earphone to Obsidian - AI Voice Assistant
+
+**🌐 Language / 语言**
+- [🇨🇳 中文](README.md)
+- [🇺🇸 English](README_EN.md)
 
 [![GitHub stars](https://img.shields.io/github/stars/GptsApp/doubao-earphone-to-obsidian?style=social)](https://github.com/GptsApp/doubao-earphone-to-obsidian)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -235,9 +239,9 @@ If this project helps you:
 
 <div align="center">
 
-**Make Doubao earphones your voice-powered bridge to Obsidian** 🧠
+**Make Doubao earphones your intelligent voice assistant** 🧠
 
-*Seamless voice-to-text solution for Ola friend earphone users*
+*Smart assistant solution crafted for Ola friend earphone users*
 
 Made with ❤️ by [WeWill_Rocky](https://x.com/WeWill_Rocky)
 
